@@ -1,0 +1,104 @@
+Web Designing 
+1. HTML     		: For What to Display		
+2. CSS				: For How to Display
+3. JavaScript		: For Intuitive and Interactive Applications
+4. Bootstrap (CSS Framework)
+5. JQuery (JS Library)
+6. Angular JS (JS Framework)
+
+
+Web Development
+1. Server Side Scripting (PHP, Django, JSP, ASP.NET)
+2. Database Management Systems 
+3. Web Servers
+4. Domains 
+
+
+HTML
+
+HTML (Hypertext Markup Language) is used to design web pages. HTML is declarative language, which uses markups(tags) to define the content. A tag in HTML represents an element to be displayed in the web page. A tag can either be empty or container type. Container types tags can contain the information or other HTML tags to be displayed. Empty tags do not contain any data with them. 
+
+
+Tag Declarations:
+
+1. <tag>					(Empty Tag)
+2. <tag> ... </tag>			(Container Tags)
+
+
+e.g.
+
+<br>						Empty Tag 
+<h1>Hello World</h1>		Container Tag
+
+
+HTML Page Structure/Skeleton
+
+<html>
+	<head>
+		<meta></meta>
+		<script></script>
+		<link></link>
+		<title></title>
+	</head>
+	<body>
+		The content to Display
+	</body>
+</html>
+
+
+HTML Formatting Tags
+
+1. <b>			
+2. <i>
+3. <u>
+4. <strong>			: Same as <b>		[5]
+5. <em>				: Same as <i>		[5]
+6. <strike>
+7. <sup>
+8. <sub>
+9. <pre>
+10. <mark>			[5]
+11. <insert>		[5]
+13. <del>			[5]
+
+Line Break and Horizontal Line <br> and <hr>
+
+1. <br>			[E]
+2. <hr>			[E]
+
+
+Image Tags
+
+1. <img>		[E]
+
+Attributes of <img>
+
+A. src : Source of the image
+B. width : Width of the image
+C. height : Height of the image
+D. align : Alignment of the image [left|right]
+E. alt : Alternate Text. To be used by a web browser in case the image is not available.
+
+<img src="path" width="size" height="size" align="left|right" alt="text">
+
+
+Paragraph Tag
+
+1. <p> : Paragraph
+
+
+Heading Tags
+
+1. <h1>
+2. <h2>
+3. <h3>
+4. <h4>
+5. <h5>
+6. <h6>
+
+
+
+
+
+
+
