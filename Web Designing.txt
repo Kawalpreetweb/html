@@ -98,6 +98,38 @@ Heading Tags
 
 
 
+Link Tags : A Link tag is used to navigate a user from one page to another page of a website. The primary function of a link is to navigate user from one point to another.
+
+Link tag can be used in following cases:
+
+1. To navigate user to a page in same website.
+2. To navigate user to a page in other website.
+3. To navigate user to a different senction in same webpage.
+4. To download files on client's computer.
+
+
+1. <a> : Anchor Tag
+
+Anchor Attributes:
+
+A. href : Hyper Reference. 
+B. download 		[5]
+
+
+Declaration:
+
+<a href="url/name" download>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
