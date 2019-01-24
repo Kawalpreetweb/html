@@ -122,15 +122,207 @@ Declaration:
 
 
 
+List Tags
+
+1. Ordered Lists (Numbered)
+2. Unordered Lists (Bulleted Lists)
+3. Definition Lists
+
+
+1. <ol> : Ordered List
+2. <ul> : Unordered List
+3. <li> : List Item
+
+
+<ol> Attributes
+
+A. start : # (Number) 
+B. type : A|a|1 (default)|i|I
+
+<ul> Attributes
+
+A. type : square|circle|disk (default)
+
+
+Declaration:
+
+<ol start="" type="">
+	<li>....</li>
+	<li>....</li>
+	<li>....</li>
+</ol>
+
+
+<ul start="" type="">
+	<li>....</li>
+	<li>....</li>
+	<li>....</li>
+</ol>
+
+
+
+
+Table Tags
+
+1. <table>
+2. <tbody>	[5]
+3. <thead>	[5]
+4. <tfoot>	[5]
+5. <tr>	
+6. <th>
+7. <td>
+
+
+Before HTML 5
+
+<table>
+	<tr>
+		<td>..</td>
+		<td>..</td>
+		....
+	</tr>
+	<tr>
+		<td>..</td>
+		<td>..</td>
+		....
+	</tr>
+	<tr>
+		<td>..</td>
+		<td>..</td>
+		....
+	</tr>
+</table>
+
+
+After HTML 5
+
+<table>
+	<thead>
+		<tr>
+			<td>..</td>
+			<td>..</td>
+			....
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>..</td>
+			<td>..</td>
+			....
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>..</td>
+			<td>..</td>
+			....
+		</tr>
+	</tfoot>
+</table>
+
+
+
+<table> Attributes
+
+1. border : Table border
+2. height : Table height
+3. width : Table width
+4. background : Background Image
+5. bgcolor : Background Color
+6. cellspacing : Spacing between two cells
+7. cellpadding : Spacing between cell borders and content.
+8. align : Left|Center|Right
+
+<tr> Attributes
+
+1. height : Row height
+2. background : Background Image
+3. bgcolor : Background Color
+4. align : Left(default)|Center|Right
+5. valign : Top|Middle(default)|Bottom
+
+<td>, <th> Attributes
+
+1. width : Cell Width
+2. background : Background Image
+3. bgcolor : Background Color
+4. align : Left(default)|Center|Right
+5. valign : Top|Middle(default)|Bottom
+6. colspan : Column span
+7. rowspan : Row Span
+
+
+Form Tags
+
+A form is a collection of input controls. A form is used to collect user data/information.
+
+
+1. <form>
+2. <input>
+3. <select>
+4. <textarea>
+5. <button>			[5]
+6. <datalist>		[5]
+
+
+1. <form> : The HTML <form> element represents a document section that contains interactive controls for submitting information to a web server.
+
+<form> Attributes:
+
+A. action : URL of the page/script where you want to submit the form data. if ommitted the data will be submitted on the same webpage.
+B. method : Defines how the data of the form will be processed. 
+			GET : The data will be appended in the URL. This method is not safe for sensitive data such as credit card info, user passwords etc.
+			POST : The data is submitted separately in a HTTP message. This method is more secure than 'GET'.
+
+			Note: If ommitted the default method will be 'GET'.
+
+C. enctype : Determines how the form data will be encoded. 
+			application/x-www-form-urlencoded (default)
+			multipart/form-data : Use this encoding if you have upload files to the web server.
+
+
+Declaration:
+
+<form action="url" method="GET|POST" enctype="">
+</form>
 
 
 
 
 
+2. <input> : Renders an input control. <input> tag renderes different UI elements such as Text Box, Radio Button, Checkbox etc.
 
+Declaration:
 
+<input type="" name="" value="">
 
+Input Types
 
+A. text
+B. email 			[5]
+C. tel 				[5]
+D. url 				[5]
+E. search 			[5]
+F. date 			[5]
+G. datetime-local 	[5]
+H. color 			[5]
+I. number 			[5]
+J. range 			[5]      (Slider)
+K. password
+L. radio
+M. checkbox
+N. button
+O. submit
+P. reset
+Q. image
+R. file
+S. hidden
 
+e.g. To Display a Text Box
 
+<input type="text">
+
+e.g. To Display a Email Box
+
+<input type="email">
 
