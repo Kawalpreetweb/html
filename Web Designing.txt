@@ -326,3 +326,120 @@ e.g. To Display a Email Box
 
 <input type="email">
 
+
+
+<input> Attributes
+
+A. id : defines the id of an element. Id value is used to access an element in the javascript. It uniquly identifies an element in a page.				
+
+B. name : defines the name of an element by which the value of the element will be uploaded to the server.
+
+C. readonly 	[5]
+D. required 	[5]		
+E. placeholder	[5]             text, email, url
+F. type
+G. value
+H. min 			[5]             number, range
+I. max 			[5]				number, range
+J. step 		[5] 			number, range
+K. multiple 	       			file 
+L. pattern 		[5]  			text, email, url
+M. list 		[5]  			text, email, url
+N. disabled 		
+O. checked						radio, checkbox
+P. accept      					file
+
+
+
+Regular Expression using Pattern
+
+[abc] 	:	Either of a, b or c.
+[a-z] 	:	Any lower alphabet between a to z
+[a-zA-Z] :	Any alphabet 
+[0-9]	: Any digit
+[0-9A-Za-z] : Any alphanumeric value
+[^0-9]	: Non numeric value
+
+
+Write a pattern to check whether a user has entered a valid credit card no. or not.
+
+[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+
+Quantifiers
+
+{n} : Exactly n occurences
+
+e.g.
+
+[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}
+
+
+{m,n} : Minimum m occurences and maximum n occurences
+{m,} : Minimum m occurences
+
+e.g.
+
+[a-zA-Z]{2,} :  Minimum two alphabets required
+
+{,n} : Maximum n occurences
+
+
++ : One or more occurences	{1,}
+* : Zero or more occurences	{0,}
+
+[a-zA-Z0-9]+.*[a-zA-Z0-9]+@[a-z]{}
+
+a.b@gmail.com
+abc.bca@gmail.com
+abcbca@gmail.com
+
+
+[A-Z]{2}[0-9]{6}
+
++[0-9]{2}-[0-9]{10}
+
+
+
+
+3. <select> : Displays a drop downl list element.
+
+Tags
+
+<select>
+<optgroup>	: [5]
+<option>
+
+
+Declaration
+
+<select>
+	<option>Value</option>
+	<option>Value</option>
+</select>
+
+
+<select> Attributes
+
+A. name
+B. id
+C. disabled
+D. multiple
+E. size
+F. required
+
+
+<option> Attributes
+
+A. disabled
+B. selected
+
+
+4. <textarea> : Multiline text box control. E.g. Address, comments, facebook post
+
+<textarea> Attributes
+
+A. rows
+B. cols
+C. id
+D. name

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Search <input type="text" id="search"> 
+
+	<form method="post">		
+		ID : <input type="text" id="id" name="id" value="1" readonly> <br>
+		Name* : <input type="text" name="name" placeholder="Enter Your Name" required> <br>
+		Address : <input type="text" name="address" value="Kapil Vihar"> <br>
+		Age : <input name="age" type="number" min="18" max="60" step=".5"> <br>
+		<input type="file" name="photo" multiple="multiple" accept=".jpg,.png"> <br>
+		<input type="text" name="cc" pattern="0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="XXXX-XXXX-XXXX-XXXX"> <br>
+		<input type="text" name="city" list="cities">
+		<datalist id="cities">
+			<option>New Delhi</option>
+			<option>Mumbai</option>
+			<option>Pune</option>
+			<option>Hyderabad</option>
+			<option>Chennai</option>
+			<option>Kolkata</option>
+		</datalist> <br>
+		<input type="radio" name="gender" value="Male" checked> Male
+		<input type="radio" name="gender" value="Female"> Female <br>
+		<input type="submit" value="Save">
+	</form>
+</body>
+</html>
