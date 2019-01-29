@@ -1,0 +1,175 @@
+CSS
+
+Cascading Style Sheets
+
+In Modern Web Designing CSS is used to define the look and feel of a web page.
+The CSS CSS gives the styles to a web page and its elements.
+
+
+CSS Styles
+
+A CSS style or rule is a collection of CSS Properties.
+
+E.g.
+
+selector
+{
+	property:value;
+	proprety:value;
+}
+
+
+e.g.
+
+p
+{
+	height:500px;
+	width:500px;	
+}
+
+h1
+{
+	background-color:gray;
+}
+
+
+
+
+
+Types of CSS
+
+1. Inline CSS : A style or rule is defined inside the element itself. 
+
+e.g.
+
+<p style="color:white;padding:20px;">....</p>
+
+2. Internal CSS : Internal CSS can be defined inside the <head> tag of an HTML page. 
+
+<style>
+	p
+	{
+		....
+	}
+
+	h1
+	{
+		...
+	}
+</style>
+
+
+
+
+3. External CSS : External CSS can be in a separate *.css file.
+
+style.css
+
+
+h1
+{
+
+}
+
+
+p
+{
+
+}
+
+To Apply external CSS
+
+<head>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+
+
+
+Types of Selectors
+
+1. Universal Selector
+2. Tag Selector
+3. Id Selector
+4. Class Selector
+5. Child Selector
+6. Descendent Selector
+7. Sibling Selector
+8. Attribute Selector
+9. Pseudo Class
+10. Pseudo Elements
+
+
+1. Universal Selector : Universal Selector applies to all elements in the page. Universal selector can be defined with * (asterisk).
+
+*
+{
+	....
+	....
+}
+
+
+
+2. Tag Selector : Tag Selector applies to all the elements with the matching names.
+
+p
+{
+	...
+}
+
+img
+{
+
+}
+
+hr
+{
+
+}
+
+
+3. Id Selector : Id Selector applies to all elements having an id value with the same name. Id selectors are declared by prefixing # to the selector name. An Id selector should be used when you want to apply a style only once in the page.
+
+
+<style>
+	#selector
+	{
+		...
+	}
+</style>
+
+
+To Apply
+
+<h1 id="selector">
+</h1>
+
+
+
+
+Summary
+
+Types of CSS
+
+
+<p style="color:blue"></p>
+
+
+<style>
+	#head
+	{
+		...
+	}
+</style>
+
+
+<div id="head">
+</div>
+
+
+
+
+github.com/attrigirish/html
+
+
+
