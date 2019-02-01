@@ -146,30 +146,76 @@ To Apply
 
 
 
-
-Summary
-
-Types of CSS
-
-
-<p style="color:blue"></p>
+4. Class Selector : Class Selector applies to all elements having a class value with the same name. Class selectors are declared by prefixing . to the selector name. A class selector should be used when you want to apply a style more than once in the page.
 
 
 <style>
-	#head
+	.selector
 	{
 		...
 	}
 </style>
 
 
-<div id="head">
-</div>
+To Apply
+
+<h1 class="selector">
+</h1>
+
+
+5. Psuedo-Classes : A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). 
+
+For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+
+
+Psuedo-Classes
+
+//Mouse Over
+
+:hover                   
+
+//Control State
+
+:focus
+:active
+:empty
+:checked
+:enabled
+:disabled
+:in-range    
+:out-of-range 
+:required  
+:valid
+:invalid
+
+
+//Hyperlink State
+
+:link
+:visited
+
+//Position of the Element
+
+:first
+:last
+:only-child
+:first-child
+:last-child
+:nth-child()
+:nth-last-child()
 
 
 
+Pseudo-Attributes
 
-github.com/attrigirish/html
+A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). 
+
+For example, ::first-line can be used to change the font of the first line of a paragraph.
 
 
+A. ::first-line
+B. ::first-letter
+C. ::selected
+D. ::before
+E. ::after
 

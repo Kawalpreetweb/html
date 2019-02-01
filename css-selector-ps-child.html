@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		li
+		{
+			list-style-type: none;			
+		}
+
+		li::first-letter
+		{
+			color:orange;
+			font-size:40px;
+		}
+
+		li::after
+		{
+			content:'...';
+		}
+
+		p::first-line
+		{
+			font-size:20px;
+		}
+
+		p::selection
+		{
+			color:orange;
+		}
+
+
+
+		span
+		{
+			background-color:red;
+		}
+	</style>
+
+</head>
+<body>
+	<ol>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+		<li>Four</li>
+		<li>Five</li>
+		<li>Six</li>
+		<li>Seven</li>
+		<li>Eight</li>
+		<li>Nine</li>
+		<li>Ten</li>
+	</ol>
+
+	<p>
+			A CSS pseudo-element is a <span>keyword</span> added to a selector that lets you style a specific part of the <span>selected</span> element(s). For example, ::first-line can be used to change the font of the first line of a paragraph.
+	</p>
+</body>
+</html>
