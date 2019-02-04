@@ -206,7 +206,7 @@ Psuedo-Classes
 
 
 
-Pseudo-Attributes
+6. Pseudo-Attributes
 
 A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). 
 
@@ -218,4 +218,124 @@ B. ::first-letter
 C. ::selected
 D. ::before
 E. ::after
+
+
+
+7. Child Selector : The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the children of elements matched by the first.
+
+
+Declaration:
+
+parent > child
+{
+	
+}
+
+
+E.g.
+
+<div class="item">
+	<img ...>
+	<h1>...</h1>
+</div>
+
+CSS
+
+.item
+{
+	
+}
+
+.item > img
+{
+	
+}
+
+.item > h1
+{
+	
+}
+
+8. Descendend Selector : The descendant combinator — typically represented by a single space ( ) character — combines two selectors such that elements matched by the second selector are selected if they have an ancestor element matching the first selector. Selectors that utilize a descendant combinator are called descendant selectors.
+
+
+<div class="article">
+	<h1>Title</h1>
+	<a href="...">Author Name</a>
+	<p>
+		fdsfsd ffa <a href="">....</a> ..fdsaf dsf dasfdas fdsfdsfsfasdf dsfdasfdas fdsf dasfdasf sfdas fdsf sdafdas f <a href="">...</a>
+	</p>
+</div>
+
+
+9. Sibling Selector : The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
+
+
+Declaration:
+
+firstsibling+secondsibling
+{
+	....
+}
+
+
+10. Attribute Selector : The CSS attribute selector matches elements based on the presence or value of a given attribute.
+
+e.g.
+
+a[href]
+{
+	...
+}
+
+input[type="text"]
+{
+	...
+}
+
+
+
+
+
+CSS Properties
+
+
+1. Text Properties
+2. Font Properties
+3. Border Properties
+4. Background Properties
+5. Table Properties
+6. List Properties
+7. Position Properties etc.
+
+
+
+1. Text Properties
+
+A. letter-spacing
+
+letter-spacing : Number;
+
+B. text-align
+
+text-align : left|center|right|justify
+
+C. text-indent
+
+text-index : Number;
+
+D. text-transform
+
+text-transform : none|uppercase|lowercase|capitalize
+
+E. word-break
+
+F. word-spacing
+
+word-spacing : Number;
+
+G. text-shadow
+
+text-shadow : x y color;
+G. color
 

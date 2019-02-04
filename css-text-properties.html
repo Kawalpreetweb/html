@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p
+		{
+			text-transform:capitalize;
+			text-indent: 80px;
+			text-align: justify;
+			letter-spacing: 3px;
+			word-spacing: 10px;
+			text-shadow: -3px 0px gray;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Selecting a font can either be done with the font property or with the six partial font properties. If font is present, it overrides the other font properties and the application is expected to extract the proper values for them from the single font as well as it can.
+
+		Where the column default has a value in parentheses (), it is the value that is the default for the root element (which cannot inherit anything). A value (-) means that the default value is application dependent.
+
+		The table says that font.size is not inherited, but the default value, 0, effectively means that the size is the same as the parent's font size. So, the relative size is not inherited, but the absolute size is.
+
+		The application is should do its best to find fonts that closely match the given properties, but it will not always succeed perfectly. How fonts and/or styles are substituted depends on the font, the user's preferences and the applications intelligence.
+
+		The text.encoding property holds a list of zero or more mappings from characters (or character codes, i.e., numbers) to glyph identifiers. The glyph identifiers are the Adobe/Postscript glyph names (when available, otherwise AFII numbers). All characters not mentioned in this encoding have their default mapping, which depends on the font.
+
+		The font.family and font properties can be lists of one or more fonts. The meaning of this is twofold: (1) when a font is unavailable, the next font in the list is tried, and (2) when a character is not available in one font, the next font is tried. This is particalarly important with multilingual documents (which use Unicode as character set), for many fonts will only contain a small set of glyphs. 
+
+	</p>
+</body>
+</html>
