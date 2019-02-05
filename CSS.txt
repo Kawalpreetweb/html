@@ -337,5 +337,71 @@ word-spacing : Number;
 G. text-shadow
 
 text-shadow : x y color;
-G. color
+
+H. color
+
+color : red;
+
+
+2. Font Properties
+
+A. font-family
+
+font-family: name name name;
+
+B. font-size
+
+font-size: Number;
+
+C. font-weight
+
+font-weight: 100 to 900
+
+D. font-variant
+
+font-variant: small-caps
+
+E. font-style
+
+E. font (Shorthand)
+
+font: font-style font-variant font-weight font-size font-family;
+
+
+
+3. Border Properties
+
+Border Styles : ridge|groove|solid|double|dashed|dotted
+
+
+A. border-top-style
+B. border-top-width
+C. border-top-color
+D. border-top: style width color;
+
+E. border-left-style
+F. border-left-width
+G. border-left-color
+H. border-left: style width color;
+
+I. border-bottom-style
+J. border-bottom-width
+K. border-botom-color
+L. border-bottom: style width color;
+
+M. border-right-style
+N. border-right-width
+O. border-right-color
+P. border-right: style width color;
+
+Q. border: width style color;
+
+R. border-top-left-radius
+J. border-top-right-radius
+K. border-bottom-left-radius
+L. border-bottom-right-radius
+
+M. border-radius
+
+
 

@@ -58,8 +58,14 @@ HTML Formatting Tags
 8. <sub>
 9. <pre>
 10. <mark>			[5]
-11. <insert>		[5]
+11. <ins>		[5]
 13. <del>			[5]
+14. <font>
+
+<font color="name" face="font-name" size="#">
+
+15. <center>
+16. <marquee>
 
 Line Break and Horizontal Line <br> and <hr>
 
@@ -104,7 +110,7 @@ Link tag can be used in following cases:
 
 1. To navigate user to a page in same website.
 2. To navigate user to a page in other website.
-3. To navigate user to a different senction in same webpage.
+3. To navigate user to a different section in same webpage.
 4. To download files on client's computer.
 
 

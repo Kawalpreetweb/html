@@ -5,13 +5,19 @@
 	<style type="text/css">
 		p
 		{
-			text-transform:capitalize;
-			text-indent: 80px;
-			text-align: justify;
-			letter-spacing: 3px;
-			word-spacing: 10px;
-			text-shadow: -1px 0px red;
-			color:red;
+/*			font-size:24px;
+			font-family:calibri, 'comic sans ms';
+			font-weight:100;
+			font-variant: small-caps;
+			font-style:italic;
+*/
+			font:italic normal 100 24px calibri;
+			border-top-left
+		}
+
+		input
+		{
+			font-variant: small-caps;
 		}
 	</style>
 </head>
@@ -30,5 +36,7 @@
 		The font.family and font properties can be lists of one or more fonts. The meaning of this is twofold: (1) when a font is unavailable, the next font in the list is tried, and (2) when a character is not available in one font, the next font is tried. This is particalarly important with multilingual documents (which use Unicode as character set), for many fonts will only contain a small set of glyphs. 
 
 	</p>
+
+	<input type='text'>
 </body>
 </html>
