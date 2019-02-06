@@ -405,3 +405,34 @@ M. border-radius
 
 
 
+4. Background Properties
+-------------------------
+
+A. background-color
+
+background-color:red;
+background-color:rgb(R,G,B)			#R:0-255, G:0-255, B:0-255
+background-color:#RRGGBB			#RR:00-FF, GG:00-FF, BB:00-FF
+background-color:rgba()				#R:0-255, G:0-255, B:0-255, A:0-1
+
+B. background-image
+
+background-image: url('path');
+
+
+C. background-position
+
+background-position:x y;			#X- Number|Center|Left|Right; Y- Number|Top|Center|Bottom
+
+e.g.
+
+background-position: right center;
+
+D. background-repeat
+
+background-repeat: no-repeat|repeat-x|repeat-y|none;
+
+E. background-size
+
+background-size:x y|contain|cover;		 
+
