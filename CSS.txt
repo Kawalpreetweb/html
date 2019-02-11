@@ -436,3 +436,26 @@ E. background-size
 
 background-size:x y|contain|cover;		 
 
+
+
+Position Properties
+
+
+A. position
+
+The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
+
+
+position:static(default) | fixed | absolute | relative;
+
+	static: The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+
+
+
+
+B. top
+C. bottom
+D. left
+E. right
+F. z-index
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div
+		{
+			height:100px;
+			width:100px;
+		}
+
+		#box1
+		{
+			top:0px;
+			left:0px;
+			background-color:red;
+			position: absolute;
+		}
+
+		#box2
+		{
+			top:10px;
+			left:10px;
+			background-color:green;
+			position: absolute;
+		}
+
+		#box3
+		{
+			top:20px;
+			left:20px;
+			background-color:blue;
+			position: absolute;
+		}
+
+		#box4
+		{
+			top:30px;
+			left:30px;
+			background-color:gray;
+			position: absolute;
+		}
+
+		#box5
+		{
+			top:40px;
+			left:40px;
+			background-color:cyan;
+			position: absolute;
+		}
+
+
+		#modal
+		{
+			height:300px;
+			border:1px solid black;
+			margin-top:200px;
+			width:100%;
+			position: relative;
+		}
+
+		#close-btn
+		{
+			height: 30px;
+			width:30px;
+			background-color:red;
+			color:white;
+			display:block;
+			
+			position: absolute;
+			right:10px;
+			top:10px;
+		}
+
+		#thumbnails
+		{
+			height:50px;
+			width:100%;
+			background-color:rgba(0,0,0,.2);
+
+			position: absolute;
+			bottom:0px;
+			left:0px;
+			padding-top:10px;
+			padding-bottom:10px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+
+		.thumbnail
+		{
+			height: 30px;
+			width:30px;
+			border-radius: 50%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box1">
+	</div>
+	<div id="box2">
+	</div>
+	<div id="box3">
+	</div>
+	<div id="box4">
+	</div>
+	<div id="box5">
+	</div>
+
+
+	<div id="modal">
+		<span id="close-btn">X</span>
+		<div id="thumbnails">
+			<img class="thumbnail" src="images\banner-2.jpg">
+			<img class="thumbnail" src="images\banner-2.jpg">
+			<img class="thumbnail" src="images\banner-2.jpg">
+			<img class="thumbnail" src="images\banner-2.jpg">
+		</div>
+	</div>
+
+
+
+</body>
+</html>
