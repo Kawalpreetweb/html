@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		#container
+		{
+			width: 1000px;
+			height: 1000px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: cyan;	
+		}
+
+		.product
+		{
+			width:247px;
+			height:300px;
+			float:left;
+			border:1px solid black;
+			margin-left:4px;
+			padding:4px;
+			box-sizing: content-box;  /*defaul*/
+		}
+
+		.product:first-child
+		{
+			margin-left:0px;
+		}
+
+		.product > img
+		{
+			height:100%;
+			width:100%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="product">
+			<img src="images/banner-1.jpg">
+		</div>
+		<div class="product">
+			<img src="images/banner-1.jpg">
+		</div>
+		<div class="product">
+			<img src="images/banner-1.jpg">
+		</div>
+		<div class="product">
+			<img src="images/banner-1.jpg">
+		</div>
+	</div>
+</body>
+</html>

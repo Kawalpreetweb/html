@@ -459,3 +459,32 @@ D. left
 E. right
 F. z-index
 
+
+
+Dimension Properties:
+
+1. height
+2. width
+3. min-height
+4. min-width
+5. max-height
+6. max-width
+7. padding
+8. margin
+9. box-sizing
+10. overflow
+
+
+Size Calculation
+
+Content-Box (box-sizing)
+-----------
+
+actual-height=height+padding-top+padding-bottom+border-top+border-bottom
+actual-width=width+padding-left+padding-right+boder-left+border-right
+
+Border-Box (box-sizing)
+-----------
+
+actual-height=height
+actual-width=width

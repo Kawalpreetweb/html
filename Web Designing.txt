@@ -275,7 +275,8 @@ A form is a collection of input controls. A form is used to collect user data/in
 
 <form> Attributes:
 
-A. action : URL of the page/script where you want to submit the form data. if ommitted the data will be submitted on the same webpage.
+A. action : URL of the page/script where you want to submit the form data.
+			if ommitted the data will be submitted on the same webpage.
 B. method : Defines how the data of the form will be processed. 
 			GET : The data will be appended in the URL. This method is not safe for sensitive data such as credit card info, user passwords etc.
 			POST : The data is submitted separately in a HTTP message. This method is more secure than 'GET'.
@@ -300,20 +301,20 @@ Declaration:
 
 Declaration:
 
-<input type="" name="" value="">
+<input type="">
 
 Input Types
 
 A. text
-B. email 			[5]
-C. tel 				[5]
-D. url 				[5]
-E. search 			[5]
-F. date 			[5]
-G. datetime-local 	[5]
+B. email 			[5]				Validation : Email
+C. tel 				[5]				
+D. url 				[5]				Validation : URL
+E. search 			[5]	
+F. date 			[5]				
+G. datetime-local 	[5]	
 H. color 			[5]
-I. number 			[5]
-J. range 			[5]      (Slider)
+I. number 			[5] (Spinner)	Validation : Min and Max
+J. range 			[5] (Slider)	Validation : Min and Max
 K. password
 L. radio
 M. checkbox
@@ -345,12 +346,12 @@ D. required 	[5]
 E. placeholder	[5]             text, email, url
 F. type
 G. value
-H. min 			[5]             number, range
-I. max 			[5]				number, range
+H. min 			[5]             number, range, date
+I. max 			[5]				number, range, date
 J. step 		[5] 			number, range
 K. multiple 	       			file 
-L. pattern 		[5]  			text, email, url
-M. list 		[5]  			text, email, url
+L. pattern 		[5]  			text, email, url, search
+M. list 		[5]  			text, email, url, search
 N. disabled 		
 O. checked						radio, checkbox
 P. accept      					file
@@ -358,6 +359,8 @@ P. accept      					file
 
 
 Regular Expression using Pattern
+
+A Regular Expression is a sequence of alphanumeric characters that are used to match for a specific pattern in the value.
 
 [abc] 	:	Either of a, b or c.
 [a-z] 	:	Any lower alphabet between a to z
@@ -382,6 +385,11 @@ e.g.
 
 
 {m,n} : Minimum m occurences and maximum n occurences
+
+Password Pattern:
+
+[a-zA-Z0-9_]{m,n}
+
 {m,} : Minimum m occurences
 
 e.g.
@@ -389,6 +397,8 @@ e.g.
 [a-zA-Z]{2,} :  Minimum two alphabets required
 
 {,n} : Maximum n occurences
+
+[a-zA-Z0-9]{,180}
 
 
 + : One or more occurences	{1,}
@@ -449,3 +459,23 @@ A. rows
 B. cols
 C. id
 D. name
+
+
+5. <datalist> : An element like a drop down list. Unlike <select>, datalist(s) has no User Interface of their own. These are use to provide a list of suggestion for the text type elements.
+
+Declaration:
+
+<datalist id="cities">
+	<option>Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+</datalist>
+
+To Bind <datalist>
+
+<input type="text" list="cities">
+
+
+6. <button> : A custom button control.
+
+
