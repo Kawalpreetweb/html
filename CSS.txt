@@ -3,7 +3,7 @@ CSS
 Cascading Style Sheets
 
 In Modern Web Designing CSS is used to define the look and feel of a web page.
-The CSS CSS gives the styles to a web page and its elements.
+The CSS gives the styles to a web page and its elements.
 
 
 CSS Styles
@@ -478,13 +478,74 @@ Dimension Properties:
 Size Calculation
 
 Content-Box (box-sizing)
------------
+------------------------
 
 actual-height=height+padding-top+padding-bottom+border-top+border-bottom
 actual-width=width+padding-left+padding-right+boder-left+border-right
 
 Border-Box (box-sizing)
------------
+-----------------------
 
 actual-height=height
 actual-width=width
+
+
+CSS Transform Properties
+--------------------------
+
+The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
+
+
+1. translate : Reposition an element.
+2. scale : Resizes an element.
+3. rotate : Rotates an element.
+4. skew : Skews an element.
+5. matrix
+
+
+1. translate 
+
+A. translate(x,y)
+B. translateX(x)
+C. translateY(y)
+
+
+2. scale
+
+A. scale(x,y)
+B. scaleX(x)
+C. scaleY(y)
+
+3. rotate
+
+A. rotate(x)
+
+
+4. skew
+
+A. skew(x,y)
+B. skewX(x)
+C. skewY(y)
+
+
+
+CSS Transition Properties
+-------------------------
+
+Applies the changes in the value of a CSS property in gradual manner.
+
+
+1. transition-property
+2. transition-duration
+3. transition-delay
+4. transition-timing-function
+
+
+CSS Animation Properties
+-------------------------
+
+
+1. animation-name
+2. animation-duration
+
+
