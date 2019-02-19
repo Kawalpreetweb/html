@@ -547,5 +547,42 @@ CSS Animation Properties
 
 1. animation-name
 2. animation-duration
+3. animation-timing-function
+4. animation-delay
+5. animation-iteration-count
+
+
+
+
+
+CSS Media Queries
+
+Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width).
+
+
+Targeting media Types    (all, print, screen, speech)
+-----------------------
+
+@media print { ... }
+@media screen { ... }
+@media print, screen { ... }
+
+
+
+Media Features:
+---------------
+
+1. width
+2. height
+3. aspect-ratio
+4. orientation
+5. resolution
+
+
+E.g.
+
+@media (max-width: 12450px) { ... }
+@media (color) { ... }
+@media (hover: hover) { ... }
 
 

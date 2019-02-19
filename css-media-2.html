@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		#col1
+		{
+			height:100px;
+			background-color:red;
+		}
+
+		#col2
+		{
+			height:100px;
+			background-color:green;
+		}
+
+		#col3
+		{
+			height:100px;
+			background-color:orange;
+		}
+
+
+		#shortheading
+		{
+			display: none;
+		}
+
+
+		@media (min-width: 900px){
+			#col1,#col2
+			{
+				width:50%;
+				float:left;
+			}
+			#col3
+			{
+				float:left;
+				width:100%;				
+			}
+
+			#shortheading
+			{
+				display: block;
+			}
+
+			#longheading
+			{
+				display: none;
+			}
+		}
+
+		@media (min-width: 1366px){
+			#col1,#col2,#col3
+			{
+				width:33.33%;
+				float:left;
+			}
+
+
+			#shortheading
+			{
+				display: block;
+			}
+
+			#longheading
+			{
+				display: none;
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="col1">
+			<h1 id="longheading">Responsive Web Designing</h1>
+			<h2 id="shortheading">RWD</h2>
+		</div>
+		<div id="col2">
+		</div>
+		<div id="col3">
+		</div>
+	</div>
+</body>
+</html>
