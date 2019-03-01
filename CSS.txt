@@ -38,11 +38,12 @@ h1
 
 Types of CSS
 
-1. Inline CSS : A style or rule is defined inside the element itself. 
+1. Inline CSS : A style or rule defined inside the element itself. 
 
 e.g.
 
 <p style="color:white;padding:20px;">....</p>
+
 
 2. Internal CSS : Internal CSS can be defined inside the <head> tag of an HTML page. 
 
@@ -60,17 +61,14 @@ e.g.
 
 
 
-
-3. External CSS : External CSS can be in a separate *.css file.
+3. External CSS : External CSS can be defined in a separate *.css file.
 
 style.css
-
 
 h1
 {
 
 }
-
 
 p
 {
@@ -87,6 +85,9 @@ To Apply external CSS
 
 
 Types of Selectors
+
+A selector is a CSS element which determines the scope of a style in the page.
+In Other words, a selector determines on which HTML element a style or rule will be applied.
 
 1. Universal Selector
 2. Tag Selector
@@ -278,10 +279,15 @@ firstsibling+secondsibling
 	....
 }
 
+h1+a
+{
+	
+}
 
 10. Attribute Selector : The CSS attribute selector matches elements based on the presence or value of a given attribute.
 
 e.g.
+
 
 a[href]
 {
@@ -322,7 +328,7 @@ text-align : left|center|right|justify
 
 C. text-indent
 
-text-index : Number;
+text-indent : Number;
 
 D. text-transform
 
@@ -342,6 +348,10 @@ H. color
 
 color : red;
 
+I. text-decoration
+
+text-decoration: underline|overline|line-through
+
 
 2. Font Properties
 
@@ -357,11 +367,9 @@ C. font-weight
 
 font-weight: 100 to 900
 
-D. font-variant
-
-font-variant: small-caps
-
 E. font-style
+
+font-style: italic
 
 E. font (Shorthand)
 
@@ -415,6 +423,12 @@ background-color:rgb(R,G,B)			#R:0-255, G:0-255, B:0-255
 background-color:#RRGGBB			#RR:00-FF, GG:00-FF, BB:00-FF
 background-color:rgba()				#R:0-255, G:0-255, B:0-255, A:0-1
 
+B. opacity 
+
+opacity:0.2;
+
+
+
 B. background-image
 
 background-image: url('path');
@@ -450,7 +464,11 @@ position:static(default) | fixed | absolute | relative;
 
 	static: The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
 
+	relative: The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
 
+	absolute: The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+
+	fixed: The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport. Its final position is determined by the values of top, right, bottom, and left. 
 
 
 B. top
