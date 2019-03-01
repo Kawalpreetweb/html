@@ -32,3 +32,164 @@ Using JavaScript
 3. External Scripts
 
 
+
+
+
+JavaScript Basic
+
+JavaScript Data Types:
+----------------------
+
+A Data Types specifies the type of the value that a variable can store. 
+
+A. int    			12, 54032, 234234234, 0
+B. float 			32.0, 0.0, 356456456.5435345345
+C. text/string  	'Anki',"Ankit", "5 Kapil Vihar", "5345345345"
+D. boolean			true, false
+E. arrays
+F. objects
+
+
+Variables:
+----------
+
+A variable is a data store which is used to store program data.
+
+JavaScript is a dynamically typed programming language, in javascript you do not have declare the data type of a variable before using it. The data type of a variable is inferred automatically by the javascript.
+
+
+Syntax:
+
+<var-name>=<value>;
+
+
+e.g.
+
+
+a=5;			//int
+b=5.2;			//float
+c='Girish';		//String
+d="Girish";		//String
+e=true;			//boolean
+f=[1,2];		//array
+
+
+
+Operators in JavaScript
+
+An operator is a symbolic instructor that performs a specific operation.
+
+1. Arithmetic 
+
+A. 	+ 		e.g.		5+3	= 	8
+B.	-		e.g.		5-2	=	3
+C.	/		e.g.		5/2 =	2.5
+D.	*		e.g.		5*2	=	10
+E.	%		e.g.		5%2	=	1
+
+2. Relational
+
+A. 	>		e.g.		5>2		=	true
+B.	<		e.g.		5<2		=	false
+C.	>=		e.g.		5>=5	=	true
+D.	<=		e.g.		5<=2	=	false
+E.	==		e.g.		5==3	=	false
+F.	!=		e.g.		5!=3	=	true
+
+3. Logical
+
+A.	&&		(AND)	5>2 && 7<4 =	false
+B.	||		(OR)	5>2 || 7<4 =	true
+C.	!		(NOT)	!(5>2)	   = 	false	
+
+Logical operators are used to evaulate two or more relational expressions together. 
+
+Exp1 		Exp2 		Exp1&&Exp2			Exp1||Exp2
+
+false		false		false				false
+false		true		false				true
+true		false		false				true
+true		true		true				true
+
+4. Assignment
+
+A. 	=		a=5;		
+B.	+=		a+=10;			//a=a+10;
+C.	-=		a-=10;			//a=a-10;
+D.	/=		a/=10;			//a=a/10;
+E.	*=		a*=10;			//a=a*10;
+F.	%=		a%=10;			//a=a%10;
+
+5. Increment/Decrement
+
+
+
+A.	++		a++; or ++a;		a=a+1;
+B.	--		a--; or --a;		a=a-1;
+
+6. Conditional
+
+7. Text
+
+A.	+		(Concatenation)
+
+e.g.
+
+"Hello"+"World"		=	HelloWorld
+
+
+
+
+Conditional Statements in JavaScript
+
+1. if..else
+2. switch..case
+3. ?.:
+
+
+
+A. Simple if
+
+if(condition)
+{
+	//statement(s) to execute if condition is true
+}
+
+
+B. if . else		(For Two Condition only)
+
+if(condition)
+{
+	//statement(s) to execute if condition is true
+}
+else
+{
+	//statement(s) to execute if condition is false
+}
+
+
+C. if . else ladder		(For More than Two Conditions)
+
+if(condition1)
+{
+	//statement(s)
+}
+elseif(condition2)
+{
+	//statement(s)
+}
+elseif(condition3)
+{
+	//statement(s)
+}
+else
+{
+	//statement(s)
+}
+
+
+
+
+
+
+
