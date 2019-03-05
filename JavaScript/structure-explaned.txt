@@ -1,0 +1,23 @@
+<div class="product">
+	<img src="">
+	<h1>Title</h1>
+	<h3>Price</h3>
+</div>
+
+
+div=document.createElement('div');
+div.setAttribute('class','product');
+
+image=document.createElement('img');
+image.src='picture.jpg';
+div.appendChild(img);
+
+title=document.createElement('h1');		
+title.innerHTML="Samsung Galaxy S10";       
+div.appendChild(title);
+
+price=document.createElement('h3');
+price.innerHTML='55000.00';
+div.appendChild(price);
+
+document.getElementById('page').appendChild(div);

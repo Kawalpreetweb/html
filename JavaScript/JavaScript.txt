@@ -191,5 +191,32 @@ else
 
 
 
+Looping Statements in JavaScript
+
+A loop is a programming statement that executes the given set of statement(s) for number of times until the specified condition becomes false.
+
+1. for
+2. while
+3. do while
+
+
+
+Syntax: for 	(Entry Controlled Loop : Best suited for situations where no. of iterations are known in advance).
+
+for(initialization;condition;updation)
+{
+	//statement(s)
+}
+
+
+e.g.
+
+
+
+
+
+
+
+
 
 
