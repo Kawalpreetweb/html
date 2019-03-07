@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+		.ball
+		{
+			height:100px;
+			width:100px;
+			background-color:red;
+			border-radius: 50%;
+			position: absolute;
+			animation-name:Bounce;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		#ball1
+		{
+			left:200px;
+			animation-duration: 5s;			
+		}
+
+
+		#ball2
+		{
+			left:350px;
+			animation-duration: 4s;			
+		}
+
+		#ball3
+		{
+			left:500px;
+			animation-duration: 3s;			
+		}
+
+		#ball4
+		{
+			left:650px;
+			animation-duration: 2s;			
+		}
+
+		#ball5
+		{
+			left:800px;
+			animation-duration: 1s;			
+		}
+
+
+
+
+		@keyframes Bounce 
+		{
+			from 
+			{
+				bottom:200px;
+			}
+
+			to 
+			{
+				bottom:400px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="ball" id="ball1">
+	</div>
+
+	<div class="ball" id="ball2">
+	</div>
+
+	<div class="ball" id="ball3">
+	</div>
+
+	<div class="ball" id="ball4">
+	</div>
+
+	<div class="ball" id="ball5">
+	</div>
+
+
+
+</body>
+</html>

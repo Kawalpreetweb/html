@@ -1,0 +1,62 @@
+CSS transform Property
+
+The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
+
+
+1. translate : Moves an Element
+
+A. translate(x,y) : Moves an element from its current 							position to x and y axis.
+
+B. translateX(x)  :	Moves an element from its current 							position on x axis.
+
+C. translateY(y)  : Moves an element from its current 							position on y axis.
+
+
+
+2. scale  :	Resizes an Element
+
+A. scale(x,y)	: 	Resizes both height and width of an 						elements.
+
+B. scaleX(x)	:	Resizes the width of an element.
+
+C. scaleY(y)	:	Resizes the height of an element.
+
+
+
+3. rotate : Rotates an Elements
+
+A. rotate(deg/rad) :	Rotates an element on its current 							axis.
+
+
+4. skew : Skews an Element.
+
+A. skew(x,y)	:	Skews an element on x and y axis.
+
+B. skewX(x)		:	Skews an element on x axis.
+
+C. skewY(y)		: 	Skews an element on y axis.
+
+
+
+
+
+
+CSS Transition Property
+
+Css transition property applies the changes in the values of assigned properties an gradual manner. When used, it creates a unique experience and the transition itself looks like an animation to the user.
+
+
+1. transition-proprety : Names the css properties on the 								transition function to be applied.
+
+2. transition-duration : Specifies the total duration of the 							transition.
+
+
+
+
+
+
+
+
+
+
+

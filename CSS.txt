@@ -602,5 +602,4 @@ E.g.
 @media (max-width: 12450px) { ... }
 @media (color) { ... }
 @media (hover: hover) { ... }
-
-
+@media screen and (min-width: 900px){ ... }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*
+		{
+			margin:0px;
+			padding:0px;
+		}
+
+		#banner-box
+		{
+			height:300px;
+			width:1366px;			
+			overflow: hidden;
+		}
+
+		#banner
+		{
+			height:100%;
+			width:100%;
+			position: relative;
+			animation-name: slidein;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes slidein
+		{
+			from{
+				left:1366px;
+			}
+			to{
+				left:0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="banner-box">
+		<img id="banner" src="images/banner-2.jpg">
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+		.ball
+		{
+			height:100px;
+			width:100px;
+			background-color:red;
+			border-radius: 50%;
+			position: absolute;
+			animation-name:Bounce;
+			animation-iteration-count: infinite;
+			animation-duration: 3s;
+		}
+
+		@keyframes Bounce 
+		{
+			0%{
+				bottom:200px;
+				left:200px;
+			}
+
+			16.66%
+			{
+				bottom:300px;
+				left:100px;
+			}
+
+			33.32%
+			{
+				bottom:400px;
+				left:200px;
+			}
+
+			49.98%
+			{
+				bottom:400px;
+				left:400px;
+			}
+
+			66.64%
+			{
+				bottom:300px;
+				left:500px;
+			}
+
+			83.3%
+			{
+				bottom:200px;
+				left:400px;
+			}
+
+			100%
+			{
+				bottom:200px;
+				left:200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="ball">
+	</div>
+</body>
+</html>
