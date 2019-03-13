@@ -212,11 +212,88 @@ for(initialization;condition;updation)
 e.g.
 
 
+//Write a loop expression to run it 10 times.
+
+for(i=1;i<=31;i++)
+{
+	
+}
+
+or
+
+for(i=31;i>=1;i--)
+{
+	
+}
+
+
+
+Syntax : while
+
+initialization;
+while(condition)
+{
+	...
+	updation
+}
+
+Syntax: do while
+
+initialization;
+do
+{
+	...
+	updation
+}while(condition);
+
+
+
+
+for(i=1;i<=100;i++)
+{
+	..
+}
+
+--------
+
+i=1;
+while(i<=100)
+{
+	..
+	i++;
+}
+
+------
+
+i=1;
+do
+{
+	..
+	i++;
+}while(i<=100);
 
 
 
 
 
+
+--------------------------------------
+
+
+Arrays
+
+An array is a collection of elements.
+
+
+Syntax:
+
+var=Array(value1,value2,value3,....,valueN);
+or
+var=[value1,value2,value3,....valueN];
+
+e.g
+
+months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
 
 
