@@ -1,0 +1,339 @@
+JavaScript
+
+Javascript is client side scripting language. Javascript code is directly embedded into an HTML page. JavaScript makes a web developer to perform the following operations without sending a request to the web server:
+
+1. Changing the style of an element.
+2. Changing the content of en element.
+3. Changing the appearance of an element.
+4. Performing Arithmetic operations.
+5. Performing Data Validations.
+
+With JavaScript You cannot:
+
+1. Accessing Server Resources.
+2. Using Database Management Systems.
+
+
+
+Using JavaScript
+
+1. Inline
+
+<input type="button" onclick="statement(s)">
+
+2. Internal
+
+<head>
+<script>
+	statement(s)
+</script>
+</head>
+
+3. External Scripts
+
+
+
+
+
+JavaScript Basic
+
+JavaScript Data Types:
+----------------------
+
+A Data Types specifies the type of the value that a variable can store. 
+
+A. int    			12, 54032, 234234234, 0
+B. float 			32.0, 0.0, 356456456.5435345345
+C. text/string  	'Anki',"Ankit", "5 Kapil Vihar", "5345345345"
+D. boolean			true, false
+E. arrays
+F. objects
+
+
+Variables:
+----------
+
+A variable is a data store which is used to store program data.
+
+JavaScript is a dynamically typed programming language, in javascript you do not have declare the data type of a variable before using it. The data type of a variable is inferred automatically by the javascript.
+
+
+Syntax:
+
+<var-name>=<value>;
+
+
+e.g.
+
+
+a=5;			//int
+b=5.2;			//float
+c='Girish';		//String
+d="Girish";		//String
+e=true;			//boolean
+f=[1,2];		//array
+
+
+
+Operators in JavaScript
+
+An operator is a symbolic instructor that performs a specific operation.
+
+1. Arithmetic 
+
+A. 	+ 		e.g.		5+3	= 	8
+B.	-		e.g.		5-2	=	3
+C.	/		e.g.		5/2 =	2.5
+D.	*		e.g.		5*2	=	10
+E.	%		e.g.		5%2	=	1
+
+2. Relational
+
+A. 	>		e.g.		5>2		=	true
+B.	<		e.g.		5<2		=	false
+C.	>=		e.g.		5>=5	=	true
+D.	<=		e.g.		5<=2	=	false
+E.	==		e.g.		5==3	=	false
+F.	!=		e.g.		5!=3	=	true
+
+3. Logical
+
+A.	&&		(AND)	5>2 && 7<4 =	false
+B.	||		(OR)	5>2 || 7<4 =	true
+C.	!		(NOT)	!(5>2)	   = 	false	
+
+Logical operators are used to evaulate two or more relational expressions together. 
+
+Exp1 		Exp2 		Exp1&&Exp2			Exp1||Exp2
+
+false		false		false				false
+false		true		false				true
+true		false		false				true
+true		true		true				true
+
+4. Assignment
+
+A. 	=		a=5;		
+B.	+=		a+=10;			//a=a+10;
+C.	-=		a-=10;			//a=a-10;
+D.	/=		a/=10;			//a=a/10;
+E.	*=		a*=10;			//a=a*10;
+F.	%=		a%=10;			//a=a%10;
+
+5. Increment/Decrement
+
+
+
+A.	++		a++; or ++a;		a=a+1;
+B.	--		a--; or --a;		a=a-1;
+
+6. Conditional
+
+7. Text
+
+A.	+		(Concatenation)
+
+e.g.
+
+"Hello"+"World"		=	HelloWorld
+
+
+
+
+Conditional Statements in JavaScript
+
+1. if..else
+2. switch..case
+3. ?.:
+
+
+
+A. Simple if
+
+if(condition)
+{
+	//statement(s) to execute if condition is true
+}
+
+
+B. if . else		(For Two Condition only)
+
+if(condition)
+{
+	//statement(s) to execute if condition is true
+}
+else
+{
+	//statement(s) to execute if condition is false
+}
+
+
+C. if . else ladder		(For More than Two Conditions)
+
+if(condition1)
+{
+	//statement(s)
+}
+elseif(condition2)
+{
+	//statement(s)
+}
+elseif(condition3)
+{
+	//statement(s)
+}
+else
+{
+	//statement(s)
+}
+
+
+
+
+
+Looping Statements in JavaScript
+
+A loop is a programming statement that executes the given set of statement(s) for number of times until the specified condition becomes false.
+
+1. for
+2. while
+3. do while
+
+
+
+Syntax: for 	(Entry Controlled Loop : Best suited for situations where no. of iterations are known in advance).
+
+for(initialization;condition;updation)
+{
+	//statement(s)
+}
+
+
+e.g.
+
+
+//Write a loop expression to run it 10 times.
+
+for(i=1;i<=31;i++)
+{
+	
+}
+
+or
+
+for(i=31;i>=1;i--)
+{
+	
+}
+
+
+
+Syntax : while
+
+initialization;
+while(condition)
+{
+	...
+	updation
+}
+
+Syntax: do while
+
+initialization;
+do
+{
+	...
+	updation
+}while(condition);
+
+
+
+
+for(i=1;i<=100;i++)
+{
+	..
+}
+
+--------
+
+i=1;
+while(i<=100)
+{
+	..
+	i++;
+}
+
+------
+
+i=1;
+do
+{
+	..
+	i++;
+}while(i<=100);
+
+
+
+
+
+
+--------------------------------------
+
+
+Arrays
+
+An array is a collection of elements.
+
+
+Syntax:
+
+var=Array(value1,value2,value3,....,valueN);
+or
+var=[value1,value2,value3,....valueN];
+
+e.g
+
+months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+
+
+---------------------------------------
+
+
+Functions
+
+A function is a subprogram that performs a specific task. Function gives modularity to the application where different tasks can be defined in separate modules. Each module or function in an application can be designed and/or tested separately and then integrated to the main application.
+
+Advantages of Functions
+
+- Easy Debugging
+- Improved Readability
+- Modularity
+- Reusability
+
+
+Why Functions?
+
+
+function <function-name>(<parameters>)
+{
+	//function-defition
+}
+
+e.g.
+
+
+1. Function Definition
+2. Function Signature
+3. Function Call
+
+
+Types of Functions
+
+1. Built In (Pre-Defined)
+	getElementById()
+	getAttribute()
+	setAttribute()
+
+	
+2. User Defined
