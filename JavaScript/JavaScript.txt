@@ -297,3 +297,67 @@ months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 
 
 
+---------------------------------------
+
+
+Functions
+
+A function is a subprogram that performs a specific task. Function gives modularity to the application where different tasks can be defined in separate modules. Each module or function in an application can be designed and/or tested separately and then integrated to the main application.
+
+Advantages of Functions
+
+- Easy Debugging
+- Improved Readability
+- Modularity
+- Reusability
+
+
+Why Functions?
+
+
+function <function-name>(<parameters>)
+{
+	//function-defition
+}
+
+e.g.
+
+
+1. Function Definition
+2. Function Signature
+3. Function Call
+
+
+Types of Functions
+
+1. Built In (Pre-Defined)
+	getElementById()
+	getAttribute()
+	setAttribute()
+
+	
+2. User Defined
+
+Syntax:
+
+function <function-name>()
+{
+	//body
+}
+
+
+
+
+
+JavaScript Objects
+
+A javascript object is a collection of key value pair data structures. 
+
+
+Declaration:
+
+obj={
+	key=value;
+	key=value;
+	key=value;
+}
