@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="date1" type="date" onchange="LoadEndDate(this.value);">
+	<input id="date2" type="date">
+
+	<script type="text/javascript">
+		days=[31,28,31,30,31,30,31,31,30,31,30,31];
+		function LoadEndDate(value)
+		{
+			date = new Date(value);
+  			day = days[date.getMonth()];
+  			month = date.getMonth()+1;
+  			if(month<10)
+  			{
+  				month='0'+month;
+  			}
+  			year = date.getFullYear();
+			document.getElementById('date2').value=[year,month,day].join('-');	
+		}		
+	</script>
+</body>
+</html>
+

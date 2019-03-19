@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#menu
+		{
+			background-color:orange;
+			height:50px;
+			list-style-type: none;
+		}
+
+		#menu > li
+		{		
+			position: relative;	
+			height:100%;
+			display: inline-block;
+			width: 19.50%;
+			padding-top: 16px;
+			color:white;
+		}
+
+
+		#menu ul
+		{
+			width:180px;
+			list-style-type: none;			
+			position: absolute;
+			top:50px;
+			left:0px;
+			background-color:orange;
+			display: none;
+		}
+
+		#menu ul > li
+		{
+			height:30px;
+		}
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li>Home</li>
+		<li>
+			About
+			<ul>
+				<li>Child</li>
+				<li>Child</li>
+				<li>Child</li>
+				<li>Child</li>
+				<li>Child</li>
+				<li>Child</li>
+				<li>Child</li>
+			</ul>
+		</li>
+		<li>Contact</li>
+		<li>
+			Product
+			<ul>
+				<li>Child</li>
+				<li>Child</li>
+				<li>Child</li>
+				<li>Child</li>
+			</ul>
+		</li>
+		<li>Client</li>
+	</ul>
+
+	<script>
+		onload=function()
+		{
+			rootelements=document.getElementById('menu').getElementsByTagName('li');
+			
+			for(i=0;i<rootelements.length;i++)
+			{
+				rootelements[i].addEventListener('mouseover',function(){
+					this.getElementsByTagName('ul')[0].style.display='block';
+				});
+
+				rootelements[i].addEventListener('mouseout',function(){
+					this.getElementsByTagName('ul')[0].style.display='none';
+				});
+
+			}
+		}
+	</script>
+
+</body>
+</html>
