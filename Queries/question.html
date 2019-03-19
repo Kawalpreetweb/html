@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="date1" type="date" onchange="LoadEndDate(this.value);">
+	<input id="date2" type="date">
+
+	<script type="text/javascript">
+		function LoadEndDate(value)
+		{
+			alert(value);
+			document.getElementById('date2').value='2019-03-31';	
+		}		
+	</script>
+</body>
+</html>
