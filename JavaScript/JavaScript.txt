@@ -361,3 +361,63 @@ obj={
 	key=value;
 	key=value;
 }
+
+
+
+
+BOM (Browser Object Model)
+
+The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. Unlike the Document Object Model, there is no standard for implementation and no strict definition, so browser vendors are free to implement the BOM in any way they wish.
+
+The top level of the hierarchy is the window object, which contains the information about the window displaying the document. Some of the window object are objects themselves that describe the document and related information.
+
+
+- window (top level object)
+- document
+- history
+- screen
+- naviator
+- location
+
+
+
+
+window object
+--------------
+
+The window object represents an open window in a browser. window object is a global object in javascript. Any variable or function added in javascript code becomes a property of global window object.
+
+e.g.
+
+a=5;		
+is similar to
+window.a=5;
+
+
+window object function/methods
+
+1. open()
+
+e.g.
+
+window.open();		//open();
+
+2. close()
+
+3. alert()
+4. prompt()
+5. confirm()
+
+6. setInterval()
+7. clearInterval()
+
+8. setTimeout()
+9. clearTimeout()
+
+10. scrollTo()
+
+11. focus()
+12. blur()
+
+
+
