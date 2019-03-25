@@ -416,8 +416,44 @@ window.open();		//open();
 
 10. scrollTo()
 
-11. focus()
-12. blur()
 
 
+window Properties
 
+1. innerHeight
+2. innerWidth
+3. outerHeight
+4. outerWidth
+5. pageXOffset
+6. pageYOffset
+
+
+screen object
+--------------
+
+The JavaScript screen object holds information of browser screen. It can be used to display screen width, height, colorDepth, pixelDepth etc.
+
+
+1. width
+2. height
+3. availHeight
+4. availWidth
+5. colorDepth
+6. pixelDepth
+
+
+history object
+--------------
+
+The JavaScript history object holds information of browsing history. It can be used to navigate user to previous or next page.
+
+Properties:
+
+1. length
+
+
+Functions:
+
+1. back
+2. forward
+3. go
