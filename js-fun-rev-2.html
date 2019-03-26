@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Id</td>
+			<td><input type="text" id="id"></td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" id="name"></td>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td><input type="text" id="age"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"><input type="button" value="Submit" onclick="Validate();"></td>
+		</tr>
+	</table>
+
+	<script>
+		function Validate()
+		{
+			output="";
+
+			if(document.getElementById('id').value=='')
+			{
+				output=output+'Id is Required\n';
+			}
+
+			if(document.getElementById('name').value=='')
+			{
+				output=output+'Name is Required\n';
+			}
+
+			if(document.getElementById('age').value=='')
+			{
+				output=output+'Age is Required\n';
+			}
+
+			if(output!='')
+			{
+				alert(output);
+			}
+		}
+	</script>
+</body>
+</html>

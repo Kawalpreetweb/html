@@ -337,3 +337,190 @@ Types of Functions
 
 	
 2. User Defined
+
+Syntax:
+
+function <function-name>()
+{
+	//body
+}
+
+
+
+
+
+JavaScript Objects
+
+A javascript object is a collection of key value pair data structures. 
+
+
+Declaration:
+
+obj={
+	key=value;
+	key=value;
+	key=value;
+}
+
+
+
+
+BOM (Browser Object Model)
+
+The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. Unlike the Document Object Model, there is no standard for implementation and no strict definition, so browser vendors are free to implement the BOM in any way they wish.
+
+The top level of the hierarchy is the window object, which contains the information about the window displaying the document. Some of the window object are objects themselves that describe the document and related information.
+
+
+- window (top level object)
+- document
+- history
+- screen
+- naviator
+- location
+
+
+
+
+window object
+--------------
+
+The window object represents an open window in a browser. window object is a global object in javascript. Any variable or function added in javascript code becomes a property of global window object.
+
+e.g.
+
+a=5;		
+is similar to
+window.a=5;
+
+
+window object function/methods
+
+1. open()
+
+e.g.
+
+window.open();		//open();
+
+2. close()
+
+3. alert()
+4. prompt()
+5. confirm()
+
+6. setInterval()
+7. clearInterval()
+
+8. setTimeout()
+9. clearTimeout()
+
+10. scrollTo()
+
+
+
+window Properties
+
+1. innerHeight
+2. innerWidth
+3. outerHeight
+4. outerWidth
+5. pageXOffset
+6. pageYOffset
+
+
+screen object
+--------------
+
+The JavaScript screen object holds information of browser screen. It can be used to display screen width, height, colorDepth, pixelDepth etc.
+
+
+1. width
+2. height
+3. availHeight
+4. availWidth
+5. colorDepth
+6. pixelDepth
+
+
+history object
+--------------
+
+The JavaScript history object holds information of browsing history. It can be used to navigate user to previous or next page.
+
+Properties:
+
+1. length
+
+
+Functions:
+
+1. back
+2. forward
+3. go
+
+
+navigator object
+----------------
+
+The navigator object contains information about the browser/client.
+
+
+1. appCodeName
+2. appName
+3. appVersion
+4. cookieEnabled
+5. geolocation
+6. language
+7. onLine
+8. platform
+9. product
+10. userAgent
+
+
+location object
+----------------
+
+The location object contains information about the current 
+URL.
+
+Location Properties:
+
+1. hash
+2. host
+3. hostname
+4. href
+5. origin
+6. pathname
+7. port
+8. protocol
+9. search
+
+
+http://www.dummy.com/folder/mypage.html#name?id=3
+
+
+Location Functions:
+
+1. assign()
+2. reload()
+3. replace()
+
+
+
+
+Browser Object Model
+
+window
+screen
+history
+navigator
+location
+
+
+Document Object Model
+
+document
+
+document.getElementById()
+document.getElementsByClassName()
+document.getElementsByTagName()

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul id="error">
+	</ul>
+	<table>
+		<tr>
+			<td>Id</td>
+			<td><input type="text" id="id"></td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" id="name"></td>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td><input type="text" id="age"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"><input type="button" value="Submit" onclick="Validate();"></td>
+		</tr>
+	</table>
+
+	<script>
+		function Validate()
+		{
+			document.getElementById('error').innerHTML='';
+
+			if(document.getElementById('id').value=='')
+			{
+				li=document.createElement('li');
+				li.innerHTML='Id is required';
+				document.getElementById('error').appendChild(li);
+			}
+
+			if(document.getElementById('name').value=='')
+			{
+				li=document.createElement('li');
+				li.innerHTML='Name is required';
+				document.getElementById('error').appendChild(li);
+			}
+
+			if(document.getElementById('age').value=='')
+			{
+				li=document.createElement('li');
+				li.innerHTML='Age is required';
+				document.getElementById('error').appendChild(li);
+			}
+
+			if(output!='')
+			{
+				alert(output);
+			}
+		}
+	</script>
+</body>
+</html>

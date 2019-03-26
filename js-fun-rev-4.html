@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Id</td>
+			<td><input type="text" id="id"></td>
+			<td><span id='error_id'></span>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" id="name"></td>
+			<td><span id='error_name'></span>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td><input type="text" id="age"></td>
+			<td><span id='error_age'></span>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"><input type="button" value="Submit" onclick="Validate();"></td>
+		</tr>
+	</table>
+
+	<script>
+		function Validate()
+		{
+			if(document.getElementById('id').value=='')
+			{
+				document.getElementById('error_id').innerHTML='Id is Required';
+			}
+
+			if(document.getElementById('name').value=='')
+			{
+				document.getElementById('error_name').innerHTML='Name is Required';
+			}
+
+			if(document.getElementById('age').value=='')
+			{
+				document.getElementById('error_age').innerHTML='Age is Required';
+			}
+
+			if(output!='')
+			{
+				alert(output);
+			}
+		}
+	</script>
+</body>
+</html>
