@@ -53,7 +53,13 @@
 			price.innerHTML='55000.00';
 			div.appendChild(price);
 
-			document.getElementById('page').appendChild(div)		
+			div.addEventListener('click',function(){
+				alert('Product Added To Cart');
+			});
+
+			document.getElementById('page').appendChild(div)
+
+
 		}
 	</script>
 </body>
