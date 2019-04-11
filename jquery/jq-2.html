@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<p id="news"></p>
+	<input type="button" value="Sports" onclick="SportsNews();">
+	<input type="button" value="Politics" onclick="PoliticsNews();">
+	<input type="button" value="Entertainment" onclick="EntertainmentNews();">
+
+	<script>
+		function SportsNews(){
+			//With JavaScript
+			//document.getElementById("news").innerHTML='Politics News';
+		
+			//With Jquery
+			$("#news").html('Sports News');
+
+			//To Read HTML Content
+			//data=$("#news").html()
+		}
+
+		function PoliticsNews(){
+			$("#news").html('Politics News');
+
+		}
+
+		function EntertainmentNews(){
+			$("#news").html('Entertainment News');
+		}
+	</script>
+
+</body>
+</html>
+

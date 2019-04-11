@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<h1>Accessing HTML Elements in Jquery</h1>
+
+
+	<h3>Accessing Elements with Tag Selector</h3>
+
+	<p>Dummy1</p>
+	<p>Dummy2</p>
+	<p>Dummy3</p>
+
+	<script>
+		$("p").css('color','red');
+	</script>
+
+
+	<h3>Accessing Elements with ID Selector</h3>
+
+	<p id="element1">Dummy1</p>
+	<p id="element2">Dummy2</p>
+	<p id="element3">Dummy3</p>
+
+	<script>
+		$("#element1").css('color','green');
+		$("#element2").css('color','blue');
+		$("#element3").css('color','cyan');		
+	</script>
+
+
+
+	<h3>Accessing Elements with Class Selector</h3>
+
+	<p class="product">Dummy1</p>
+	<p class="product">Dummy2</p>
+	<p class="product">Dummy3</p>
+
+	<script>
+		$(".product").css('background-color','red');
+	</script>
+
+
+	<h3>Accessing Elements with Child Selector</h3>
+
+	<p class="product"><span>Dummy1</span></p>
+	<p class="product">Dummy2</p>
+	<p class="product"><span>Dummy3</span></p>
+
+	<script>
+		$(".product span").css('color','gray');
+	</script>
+
+
+
+</body>
+</html>
+
