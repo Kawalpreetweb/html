@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<input id="txtNumber" type="text"> <br>
+	<input type="button" value="1">
+	<input type="button" value="2">
+	<input type="button" value="3"> <br>
+	<input type="button" value="4"> 
+	<input type="button" value="5"> 
+	<input type="button" value="6"> <br>
+	<input type="button" value="7"> 
+	<input type="button" value="8">
+	<input type="button" value="9"> <br>
+	<input type="button" value="0">
+
+	<script>
+		$('input[type=button]').click(function(){
+			value=$('txtNumber').val()+this.value;
+			$('#txtNumber').val(value);
+		})
+	</script>
+</body>
+</html>

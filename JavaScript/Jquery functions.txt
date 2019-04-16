@@ -1,0 +1,120 @@
+Jquery functions
+
+1. $  : Accessor Function, to access html elements from the page.
+
+Syntax:
+
+$('selector-name')
+
+e.g.
+
+$('p')
+$('#head')
+$('.product')
+$('div h1')
+
+
+2. css : Applies a css property on selected elements.
+
+Syntax:
+
+css('property-name','value')
+
+e.g.
+
+$('p').css('color','red');
+
+Function Chaining.
+------------------
+
+$('p').css('color','red').css('background-color','blue');
+
+
+3. addClass : Adds a css class on selected elements.
+
+Syntax:
+
+addClass('class-name')
+
+e.g.
+
+$('p').addClass('news');
+
+4. removeClass : Removes a css class from selected elements.
+
+Syntax:
+
+removeClass('class-name')
+
+e.g.
+
+$('p').removeClass('news');
+
+
+5. toggleClass : Adds or Removes a css class from selected elements.
+
+Syntax:
+
+toggleClass('class-name')
+
+e.g.
+
+$('p').toggleClass('news');
+
+
+6. show : Shows selected elements if hidden.
+
+Syntax:
+
+show()
+
+e.g.
+
+$('img').show();
+
+
+7. hide : Hides selected elements if shown.
+
+Syntax:
+
+hide()
+
+e.g.
+
+$('img').hide();
+
+
+6. toggle : Shows or Hides selected elements.
+
+Syntax:
+
+toggle()
+
+e.g.
+
+$('img').toggle();
+
+
+7. html : Reads or Writes the innerHTML of selected elements.
+
+Syntax:
+
+html('content-to-write')
+
+e.g.
+
+$('article').html('Sports News to be displayn here...');
+$('article').html(output);
+
+
+8. val : Reads or Writes the value of selected element(s).
+
+Syntax:
+
+val()		: To Read
+val(value) 	: To Write
+
+e.g.
+
+x=$('#first').val();
+$('#result').val(x);

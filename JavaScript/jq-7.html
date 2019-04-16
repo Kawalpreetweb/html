@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+			img{
+				display: block;
+			}
+		</style>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<input type="button" value="Remove Pictures" onclick="RemovePictures();">
+		<input type="button" value="Load Pictures" onclick="LoadPictures();">
+		<img src="pic1.jpg">
+		<img src="pic2.jpg">
+		<img src="pic3.jpg">
+
+		<script>
+			function LoadPictures(){
+				//In JavaScript
+				/*pictures=document.getElementsByTagName('img');
+				 	for(i=0;i<pictures.length;i++){
+				 	pictures[i].style='display:block';
+				}
+				*/
+
+				$('img').show();
+
+
+			}
+
+			function RemovePictures(){
+				//In JavaScript
+				/*
+				pictures=document.getElementsByTagName('img');
+				for(i=0;i<pictures.length;i++){
+					pictures[i].style='display:none';
+				}
+				*/
+
+				$('img').hide();
+
+			}
+		</script>
+	</body>
+</html>
